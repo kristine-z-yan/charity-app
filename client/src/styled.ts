@@ -12,20 +12,20 @@ const Form = styled.form`
   align-items: center;
   padding: 15px;
   justify-content: space-around;
+
   input {
     width: 90%;
     height: 30px;
   }
+
   button {
-    width: 100px;
+    width: 150px;
     height: 30px;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    background-color: aqua;
-  }
-  .userID {
-    margin-top: 20px;
+    background-color: #22b217;
+    color: white
   }
 `;
 
@@ -53,15 +53,33 @@ const Table = styled.table`
 `;
 
 const Button = styled.button`
-  margin-left: 10px;
+  margin: 5px 10px;
   border: none;
-  background-color: #fff;
   cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: grey;
+  color: white;
 `;
+
+const SaveButton = styled(Button)`
+  background-color: #22b217;
+`;
+
+const EditButton = styled(Button)`
+  background-color: #ff6918;
+`;
+
+const DeleteButton = styled(Button)`
+  background-color: red;
+`
 
 export const Styled = {
     Form,
     TableContainer,
     Table,
     Button,
+    SaveButton,
+    EditButton,
+    DeleteButton
 };
